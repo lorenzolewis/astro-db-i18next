@@ -17,5 +17,9 @@
 	"devDependencies": {
 		"@biomejs/biome": "1.7.1",
 		"@changesets/cli": "^2.27.1"
+	},
+	"dependencies": {
+		"@astrojs/db": "^0.11.0",
+		"i18next": "^23.11.3"
 	}
 }

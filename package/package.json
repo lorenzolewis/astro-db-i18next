@@ -33,7 +33,10 @@
 	},
 	"type": "module",
 	"peerDependencies": {
-		"astro": "^4.0.0"
+		"astro": "^4.0.0",
+		"@astrojs/db": "^0.11.0",
+		"i18next": "^23.11.3"
+		
 	},
 	"dependencies": {
 		"astro-integration-kit": "^0.13.1"
