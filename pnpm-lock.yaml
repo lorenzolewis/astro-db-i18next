@@ -31,8 +31,8 @@ importers:
         specifier: ^4.0.0
         version: 4.5.16(@types/node@20.12.7)(typescript@5.4.5)
       astro-integration-kit:
-        specifier: ^0.13.1
-        version: 0.13.1(@astrojs/db@0.11.0)(astro@4.5.16(@types/node@20.12.7)(typescript@5.4.5))
+        specifier: ^0.13.3
+        version: 0.13.3(@astrojs/db@0.11.0)(astro@4.5.16(@types/node@20.12.7)(typescript@5.4.5))
       i18next:
         specifier: ^23.11.3
         version: 23.11.3
@@ -53,8 +53,8 @@ importers:
         specifier: ^4.7.0
         version: 4.7.0(@types/node@20.12.7)(typescript@5.4.5)
       astro-integration-kit:
-        specifier: ^0.13.1
-        version: 0.13.1(@astrojs/db@0.11.0)(astro@4.7.0(@types/node@20.12.7)(typescript@5.4.5))
+        specifier: ^0.13.3
+        version: 0.13.3(@astrojs/db@0.11.0)(astro@4.7.0(@types/node@20.12.7)(typescript@5.4.5))
       i18next:
         specifier: ^23.11.3
         version: 23.11.3
@@ -1105,10 +1105,10 @@ packages:
     resolution: {integrity: sha512-6t10qk83GOG8p0vKmaCr8eiilZwO171AvbROMtvvNiwrTly62t+7XkA8RdIIVbpMhCASAsxgAzdRSwh6nw/5Dg==}
     engines: {node: '>=4'}
 
-  astro-integration-kit@0.13.1:
-    resolution: {integrity: sha512-c/VEvRXJdnKa7/Y4s9CYr81L7Vvue7Bijtgp2TKuf9etCXiMDzEzQ3C5RdjMCzRI68VlKuVblfnLmY4iWizFdg==}
+  astro-integration-kit@0.13.3:
+    resolution: {integrity: sha512-hUEQMnZ7z+7ySPCX6mXnIr0BFZU1+49eQQBg4aHjKGz1o2oZ5tvuB9Tlyj/orRH9ubd+Gkd0SSoldz0BTNe4Rg==}
     peerDependencies:
-      '@astrojs/db': ^0.9 || ^0.10
+      '@astrojs/db': ^0.9 || ^0.10 || ^0.11
       astro: ^4.4.1
     peerDependenciesMeta:
       '@astrojs/db':
@@ -2760,8 +2760,8 @@ packages:
     resolution: {integrity: sha512-hOS089on8RduqdbhvQ5Z37A0ESjsqz6qnRcffsMU3495FuTdqSm+7bhJ29JvIOsBDEEnan5DPu9t3To9VRlMzA==}
     engines: {node: '>=8.10.0'}
 
-  recast@0.23.6:
-    resolution: {integrity: sha512-9FHoNjX1yjuesMwuthAmPKabxYQdOgihFYmT5ebXfYGBcnqXZf3WOVz+5foEZ8Y83P4ZY6yQD5GMmtV+pgCCAQ==}
+  recast@0.23.7:
+    resolution: {integrity: sha512-MpQlLZVpqbbxYcqEjwpRWo88sGvjOYoXptySz710RuddNMHx+wPkoNX6YyLZJlXAh5VZr1qmPrTwcTuFMh0Lag==}
     engines: {node: '>= 4'}
 
   redent@3.0.0:
@@ -4708,19 +4708,19 @@ snapshots:
     dependencies:
       tslib: 2.6.2
 
-  astro-integration-kit@0.13.1(@astrojs/db@0.11.0)(astro@4.5.16(@types/node@20.12.7)(typescript@5.4.5)):
+  astro-integration-kit@0.13.3(@astrojs/db@0.11.0)(astro@4.5.16(@types/node@20.12.7)(typescript@5.4.5)):
     dependencies:
       astro: 4.5.16(@types/node@20.12.7)(typescript@5.4.5)
       pathe: 1.1.2
-      recast: 0.23.6
+      recast: 0.23.7
     optionalDependencies:
       '@astrojs/db': 0.11.0
 
-  astro-integration-kit@0.13.1(@astrojs/db@0.11.0)(astro@4.7.0(@types/node@20.12.7)(typescript@5.4.5)):
+  astro-integration-kit@0.13.3(@astrojs/db@0.11.0)(astro@4.7.0(@types/node@20.12.7)(typescript@5.4.5)):
     dependencies:
       astro: 4.7.0(@types/node@20.12.7)(typescript@5.4.5)
       pathe: 1.1.2
-      recast: 0.23.6
+      recast: 0.23.7
     optionalDependencies:
       '@astrojs/db': 0.11.0
 
@@ -6727,7 +6727,7 @@ snapshots:
     dependencies:
       picomatch: 2.3.1
 
-  recast@0.23.6:
+  recast@0.23.7:
     dependencies:
       ast-types: 0.16.1
       esprima: 4.0.1
