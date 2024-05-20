@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@astrojs/db':
-        specifier: ^0.11.0
-        version: 0.11.0
+        specifier: ^0.11.3
+        version: 0.11.3
       i18next:
         specifier: ^23.11.3
         version: 23.11.3
@@ -44,8 +44,8 @@ importers:
   playground:
     dependencies:
       '@astrojs/db':
-        specifier: ^0.11.0
-        version: 0.11.0
+        specifier: ^0.11.3
+        version: 0.11.3
       '@astrojs/tailwind':
         specifier: ^5.1.0
         version: 5.1.0(astro@4.7.0(@types/node@20.12.7)(typescript@5.4.5))(tailwindcss@3.4.3)
@@ -54,7 +54,7 @@ importers:
         version: 4.7.0(@types/node@20.12.7)(typescript@5.4.5)
       astro-integration-kit:
         specifier: ^0.13.1
-        version: 0.13.1(@astrojs/db@0.11.0)(astro@4.7.0(@types/node@20.12.7)(typescript@5.4.5))
+        version: 0.13.1(@astrojs/db@0.11.3)(astro@4.7.0(@types/node@20.12.7)(typescript@5.4.5))
       i18next:
         specifier: ^23.11.3
         version: 23.11.3
@@ -97,6 +97,9 @@ packages:
   '@astrojs/db@0.11.0':
     resolution: {integrity: sha512-UK+XFmmLr3Fz4UJTy69QE5thxn8SK2y9eYZc28PRHwRggT91SIOzcQBMV+H2XthCnPphi9ifz0KF0yZcwCklhA==}
 
+  '@astrojs/db@0.11.3':
+    resolution: {integrity: sha512-F4EofNw7QRBWzfNYmHKHlq1v5y9GrLjzGX8h2RkabH8gIhF7ZQKCU/movE//9WRURvouBS3KDzsqUgdHvMdJ5A==}
+
   '@astrojs/internal-helpers@0.4.0':
     resolution: {integrity: sha512-6B13lz5n6BrbTqCTwhXjJXuR1sqiX/H6rTxzlXx+lN1NnV4jgnq/KJldCQaUWJzPL5SiWahQyinxAbxQtwgPHA==}
 
@@ -125,6 +128,9 @@ packages:
   '@astrojs/prism@3.1.0':
     resolution: {integrity: sha512-Z9IYjuXSArkAUx3N6xj6+Bnvx8OdUSHA8YoOgyepp3+zJmtVYJIl/I18GozdJVW1p5u/CNpl3Km7/gwTJK85cw==}
     engines: {node: ^18.17.1 || ^20.3.0 || >=21.0.0}
+
+  '@astrojs/studio@0.1.0':
+    resolution: {integrity: sha512-pjggMFgtZHPem6RWall02DTa54VCQ4fjqj4bLV0CpQEi0ydgDlughb81PtLhpQPTV0IUtTFOnHbzx6rcKMBAzg==}
 
   '@astrojs/tailwind@5.1.0':
     resolution: {integrity: sha512-BJoCDKuWhU9FT2qYg+fr6Nfb3qP4ShtyjXGHKA/4mHN94z7BGcmauQK23iy+YH5qWvTnhqkd6mQPQ1yTZTe9Ig==}
@@ -3602,6 +3608,9 @@ packages:
   zod@3.23.6:
     resolution: {integrity: sha512-RTHJlZhsRbuA8Hmp/iNL7jnfc4nZishjsanDAfEY1QpDQZCahUp3xDzl+zfweE9BklxMUcgBgS1b7Lvie/ZVwA==}
 
+  zod@3.23.8:
+    resolution: {integrity: sha512-XBx9AXhXktjUqnepgTiE5flcKIYWi/rme0Eaj+5Y0lftuGBq+jyRu/md4WnuxqgP1ubdpNCsYEYPxrzVHD8d6g==}
+
   zwitch@2.0.4:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
 
@@ -3644,6 +3653,51 @@ snapshots:
       strip-ansi: 7.1.0
       yargs-parser: 21.1.1
       zod: 3.23.6
+    transitivePeerDependencies:
+      - '@aws-sdk/client-rds-data'
+      - '@cloudflare/workers-types'
+      - '@electric-sql/pglite'
+      - '@neondatabase/serverless'
+      - '@op-engineering/op-sqlite'
+      - '@opentelemetry/api'
+      - '@planetscale/database'
+      - '@types/better-sqlite3'
+      - '@types/pg'
+      - '@types/react'
+      - '@types/sql.js'
+      - '@vercel/postgres'
+      - '@xata.io/client'
+      - better-sqlite3
+      - bufferutil
+      - bun-types
+      - expo-sqlite
+      - knex
+      - kysely
+      - mysql2
+      - pg
+      - postgres
+      - react
+      - sql.js
+      - sqlite3
+      - utf-8-validate
+
+  '@astrojs/db@0.11.3':
+    dependencies:
+      '@astrojs/studio': 0.1.0
+      '@libsql/client': 0.6.0
+      async-listen: 3.0.1
+      ci-info: 4.0.0
+      deep-diff: 1.0.2
+      drizzle-orm: 0.30.10(@libsql/client@0.6.0)
+      github-slugger: 2.0.0
+      kleur: 4.1.5
+      nanoid: 5.0.7
+      open: 10.1.0
+      ora: 8.0.1
+      prompts: 2.4.2
+      strip-ansi: 7.1.0
+      yargs-parser: 21.1.1
+      zod: 3.23.8
     transitivePeerDependencies:
       - '@aws-sdk/client-rds-data'
       - '@cloudflare/workers-types'
@@ -3750,6 +3804,12 @@ snapshots:
   '@astrojs/prism@3.1.0':
     dependencies:
       prismjs: 1.29.0
+
+  '@astrojs/studio@0.1.0':
+    dependencies:
+      ci-info: 4.0.0
+      kleur: 4.1.5
+      ora: 8.0.1
 
   '@astrojs/tailwind@5.1.0(astro@4.7.0(@types/node@20.12.7)(typescript@5.4.5))(tailwindcss@3.4.3)':
     dependencies:
@@ -4716,13 +4776,13 @@ snapshots:
     optionalDependencies:
       '@astrojs/db': 0.11.0
 
-  astro-integration-kit@0.13.1(@astrojs/db@0.11.0)(astro@4.7.0(@types/node@20.12.7)(typescript@5.4.5)):
+  astro-integration-kit@0.13.1(@astrojs/db@0.11.3)(astro@4.7.0(@types/node@20.12.7)(typescript@5.4.5)):
     dependencies:
       astro: 4.7.0(@types/node@20.12.7)(typescript@5.4.5)
       pathe: 1.1.2
       recast: 0.23.6
     optionalDependencies:
-      '@astrojs/db': 0.11.0
+      '@astrojs/db': 0.11.3
 
   astro@4.5.16(@types/node@20.12.7)(typescript@5.4.5):
     dependencies:
@@ -7748,5 +7808,7 @@ snapshots:
   zod@3.23.4: {}
 
   zod@3.23.6: {}
+
+  zod@3.23.8: {}
 
   zwitch@2.0.4: {}
